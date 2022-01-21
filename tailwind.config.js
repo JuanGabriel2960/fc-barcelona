@@ -10,7 +10,11 @@ module.exports = {
     },
     darkMode: 'class', // or 'media' or 'class'
     theme: {
-      extend: {},
+      extend: {
+        colors: {
+          'fc-yellow': '#fcc52c'
+        }
+      },
     },
     variants: {
       extend: {},

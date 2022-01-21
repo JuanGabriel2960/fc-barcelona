@@ -1,0 +1,11 @@
+.card{
+    background-size: cover!important;
+    background-position: 50%!important;
+}
+.card:hover{
+    filter: brightness(1.4);
+}
+.card:hover .info-bottom{
+    opacity: 1!important;
+    height: 20%!important;
+}

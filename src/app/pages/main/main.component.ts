@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CMSService } from '../../services/cms.service';
+import { Group } from '../../interfaces/main.interface';
 
 @Component({
   selector: 'app-main',
@@ -6,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: []
 })
 export class MainComponent implements OnInit {
+  groups!: Group[]
 
-  constructor() { }
+  constructor(private CMS: CMSService) { }
 
   ngOnInit(): void {
+    this.CMS.getMain()
+    .subscribe(resp=>{
+      this.groups = resp.group
+    }, (err)=>{
+      console.log(err)
+    })
   }
 
 }

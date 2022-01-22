@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Player } from '../../interfaces/main.interface';
-import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-card',
@@ -9,10 +8,10 @@ import { environment } from '../../../environments/environment';
 })
 export class CardComponent implements OnInit {
   @Input() player!: Player;
-  BACKEND_URL: string = environment.BACKEND_URL;
 
   constructor() { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+  }
 
 }

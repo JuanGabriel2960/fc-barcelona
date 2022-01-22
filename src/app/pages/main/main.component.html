@@ -7,7 +7,7 @@
         <div class="mb-6" *ngFor="let group of groups">
             <h3 class="text-center font-bold mb-5 text-4xl">{{group.position}}</h3>
             <div class="flex justify-center flex-wrap gap-3">
-                <app-card *ngFor="let player of group.players" [player]="player"></app-card>
+                <app-card *ngFor="let player of group.players" routerLink="/player/{{player._id}}" [player]="player"></app-card>
             </div>
         </div>
     </div>

@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 
 // Components
 import { CardComponent } from './card/card.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
   declarations: [
-    CardComponent
+    CardComponent,
+    HeaderComponent
   ],
   imports: [
     CommonModule

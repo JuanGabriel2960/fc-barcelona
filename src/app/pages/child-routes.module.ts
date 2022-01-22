@@ -8,7 +8,7 @@ import { PlayerComponent } from './player/player.component';
 
 const childRoutes: Routes = [
   { path: 'main', component: MainComponent},
-  { path: 'player', component: PlayerComponent},
+  { path: 'player/:_id', component: PlayerComponent},
   { path: '', redirectTo: '/main', pathMatch: 'full' },
 ]
 

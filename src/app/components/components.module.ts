@@ -1,6 +1,7 @@
 // Modules
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { PipesModule } from '../pipes/pipes.module';
 
 // Components
 import { CardComponent } from './card/card.component';
@@ -17,7 +18,8 @@ import { HighlightsComponent } from './highlights/highlights.component';
     HighlightsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    PipesModule
   ],
   exports: [
     CardComponent,

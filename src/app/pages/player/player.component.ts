@@ -18,7 +18,6 @@ export class PlayerComponent implements OnInit {
 
     this.CMS.getPlayer(_id)
       .subscribe(resp => {
-        console.log(resp)
         this.player = resp
       }, (err) => {
         console.log(err)

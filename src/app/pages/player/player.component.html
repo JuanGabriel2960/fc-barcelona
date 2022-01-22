@@ -1,1 +1,28 @@
-<p>player works!</p>
+<div>
+    <app-header></app-header>
+    <div class="py-20 px-16 bg-light-gray">
+        <div class="flex justify-between items-center">
+            <div>
+                <h1 class="text-6xl font-bold">{{player?.name}} {{player?.lastname}}</h1>
+                <div class="my-6 flex">
+                    <img [src]="player?.flag?.url" class="w-12 mr-5" alt="flag" />
+                    <p>{{player?.country}}</p>
+                </div>
+                <div class="flex">
+                    <div class="mr-8 font-bold">
+                        <h5 class="text-xl">HEIGHT</h5>
+                        <h3 class="text-4xl">{{player?.height}} <span class="text-2xl">cm</span></h3>
+                    </div>
+                    <div class="font-bold">
+                        <h5 class="text-xl">WEIGHT</h5>
+                        <h3 class="text-4xl">{{player?.weight}} <span class="text-2xl">lbs</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <app-games></app-games>
+                <app-highlights [url]="player.video"></app-highlights>
+            </div>
+        </div>
+    </div>
+</div>

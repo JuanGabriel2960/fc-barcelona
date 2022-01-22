@@ -1,0 +1,10 @@
+.on{
+    background-color: white;
+    border-radius: 13px 13px 0 0;
+}
+.border_corner{
+    border-radius: 0 13px 13px 13px;
+}
+.border_full{
+    border-radius: 13px;
+}

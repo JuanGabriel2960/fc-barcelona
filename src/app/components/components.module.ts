@@ -5,18 +5,25 @@ import { CommonModule } from '@angular/common';
 // Components
 import { CardComponent } from './card/card.component';
 import { HeaderComponent } from './header/header.component';
+import { GamesComponent } from './games/games.component';
+import { HighlightsComponent } from './highlights/highlights.component';
 
 
 @NgModule({
   declarations: [
     CardComponent,
-    HeaderComponent
+    HeaderComponent,
+    GamesComponent,
+    HighlightsComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    CardComponent
+    CardComponent,
+    HeaderComponent,
+    GamesComponent,
+    HighlightsComponent
   ]
 })
 export class ComponentsModule { }

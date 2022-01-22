@@ -1,0 +1,21 @@
+<div>
+    <div class="flex text-left text-xl">
+        <button class="font-semibold p-4 pb-2" (click)="lastGame=true" [class.on]="lastGame">LAST GAME</button>
+        <button class="font-semibold p-4 pb-2" (click)="lastGame=false" [class.on]="!lastGame">NEXT GAME</button>
+    </div>
+    <div class="bg-white py-8 px-12" [ngClass]="{'border_corner': lastGame, 'border_full' : !lastGame}">
+        <p class="text-center font-semibold text-xl text-text-gray">La Liga</p>
+        <div class="flex items-center my-1">
+            <div class="flex items-center">
+                <img src="/assets/logo.png" class="w-12 mr-4" alt="barcelona">
+                <h3 class="font-bold text-6xl">1</h3>
+            </div>
+            <h5 class="text-center font-bold text-xl mx-14">Matchday 5</h5>
+            <div class="flex items-center">
+                <h3 class="font-bold text-6xl">1</h3>
+                <img src="/assets/sevilla.png" class="w-12 ml-4" alt="sevilla">
+            </div>
+        </div>
+        <p class="text-center font-semibold text-xl text-text-gray">04/10/2020</p>
+    </div>
+</div>

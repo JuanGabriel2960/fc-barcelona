@@ -1,27 +1,60 @@
-<div>
+<div *ngIf="player">
     <app-header></app-header>
     <div class="py-20 px-16 bg-light-gray">
-        <div class="flex justify-between items-center">
-            <div>
-                <h1 class="text-6xl font-bold">{{player?.name}} {{player?.lastname}}</h1>
+        <div class="flex flex-col justify-between items-center">
+            <div class="flex flex-col items-center">
+                <h1 class="text-6xl font-bold">{{player.name}} {{player.lastname}}</h1>
                 <div class="my-6 flex">
-                    <img [src]="player?.flag?.url" class="w-12 mr-5" alt="flag" />
-                    <p>{{player?.country}}</p>
+                    <img [src]="player.flag.url" class="w-12 mr-5" alt="flag" />
+                    <p>{{player.country}}</p>
                 </div>
-                <div class="flex">
-                    <div class="mr-8 font-bold">
+                <div class="flex gap-8">
+                    <div class="font-bold">
                         <h5 class="text-xl">HEIGHT</h5>
-                        <h3 class="text-4xl">{{player?.height}} <span class="text-2xl">cm</span></h3>
+                        <h3 class="text-4xl">{{player.height}} <span class="text-2xl">cm</span></h3>
                     </div>
                     <div class="font-bold">
                         <h5 class="text-xl">WEIGHT</h5>
-                        <h3 class="text-4xl">{{player?.weight}} <span class="text-2xl">lbs</span></h3>
+                        <h3 class="text-4xl">{{player.weight}} <span class="text-2xl">lbs</span></h3>
                     </div>
                 </div>
             </div>
             <div>
                 <app-games></app-games>
                 <app-highlights [url]="player.video"></app-highlights>
+            </div>
+        </div>
+    </div>
+    <div class="py-20 px-16 bg-bold-gray">
+        <div class="flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between">
+                    <h4 class="mr-8 font-bold">BORN</h4>
+                    <p class="text-2xl">{{player.birthday}}</p>
+                </div>
+                <div class="flex justify-between border-t border-b border-gray-500 py-4 my-4">
+                    <h4 class="mr-8 font-bold">AGE</h4>
+                    <p class="text-2xl">{{player.birthday}}</p>
+                </div>
+                <div class="flex justify-between">
+                    <h4 class="mr-8 font-bold">FROM</h4>
+                    <p class="text-2xl">{{player.from}}</p>
+                </div>
+            </div>
+            <hr class="border-t border-gray-500 my-4" />
+            <div>
+                <div class="flex justify-between">
+                    <h4 class="mr-8 font-bold">BARÇA DEBUT</h4>
+                    <p class="text-2xl">{{player.debut}}</p>
+                </div>
+                <div class="flex justify-between border-t border-b border-gray-500 py-4 my-4">
+                    <h4 class="mr-8 font-bold">YEARS IN BARCELONA</h4>
+                    <p class="text-2xl">{{player.debut}}</p>
+                </div>
+                <div class="flex justify-between">
+                    <h4 class="mr-8 font-bold">PREVIOUSLY</h4>
+                    <p class="text-2xl">{{player.previously}}</p>
+                </div>
             </div>
         </div>
     </div>

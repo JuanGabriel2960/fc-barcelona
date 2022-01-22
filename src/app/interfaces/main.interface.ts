@@ -37,6 +37,7 @@ export interface Player {
     previously:   string;
     stat_title_1: string;
     stat_title_2: string;
+    debut:        Date;
     video:        string;
     data_bio:     string;
     stat_title_3: string;

@@ -66,11 +66,11 @@
         </div>
     </div>
     <div class="py-20 px-16 bg-bold-gray">
-        <div class="flex flex-col justify-between items-center">
+        <div class="flex flex-col gap-5 justify-between items-center">
             <img [src]="player.bio.url" alt="bio" />
-            <div class="flex flex-col gap-6 items-baseline">
-                <h2 class="text-4xl text-justify font-bold">{{player.title_bio}}</h2>
-                <p class="text-xl whitespace-pre-wrap">{{player.data_bio}}</p>
+            <div class="flex flex-col gap-4 items-baseline">
+                <h2 class="text-3xl text-justify font-bold">{{player.title_bio}}</h2>
+                <p class="text-xl text-justify whitespace-pre-wrap">{{player.data_bio | preview}}</p>
                 <img src="/assets/more.png" alt="more" />
             </div>
         </div>

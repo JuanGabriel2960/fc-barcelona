@@ -8,6 +8,7 @@ import { CardComponent } from './card/card.component';
 import { HeaderComponent } from './header/header.component';
 import { GamesComponent } from './games/games.component';
 import { HighlightsComponent } from './highlights/highlights.component';
+import { StatsComponent } from './stats/stats.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { HighlightsComponent } from './highlights/highlights.component';
     CardComponent,
     HeaderComponent,
     GamesComponent,
-    HighlightsComponent
+    HighlightsComponent,
+    StatsComponent
   ],
   imports: [
     CommonModule,
@@ -25,7 +27,8 @@ import { HighlightsComponent } from './highlights/highlights.component';
     CardComponent,
     HeaderComponent,
     GamesComponent,
-    HighlightsComponent
+    HighlightsComponent,
+    StatsComponent
   ]
 })
 export class ComponentsModule { }

@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ComponentsModule } from '../components/components.module';
+import { PipesModule } from '../pipes/pipes.module';
 
 // Components
 import { MainComponent } from './main/main.component';
@@ -20,7 +21,8 @@ import { PagesComponent } from './pages.component';
     CommonModule,
     RouterModule,
     HttpClientModule,
-    ComponentsModule
+    ComponentsModule,
+    PipesModule
   ]
 })
 export class PagesModule { }

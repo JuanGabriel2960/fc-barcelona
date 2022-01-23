@@ -12,7 +12,12 @@ module.exports = {
     theme: {
       extend: {
         colors: {
-          'fc-yellow': '#fcc52c'
+          'fc-yellow': '#fcc52c',
+          'light-gray': '#e7e8eb',
+          'bold-gray': '#d7d9df',
+          'text-gray': '#bcc5cf',
+          'light-blue': '#20428c',
+          'bold-blue': '#06172a',
         }
       },
     },

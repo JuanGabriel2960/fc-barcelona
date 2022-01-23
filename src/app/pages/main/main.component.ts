@@ -14,11 +14,11 @@ export class MainComponent implements OnInit {
 
   ngOnInit(): void {
     this.CMS.getMain()
-    .subscribe(resp=>{
-      this.groups = resp.group
-    }, (err)=>{
-      console.log(err)
-    })
+      .subscribe(resp => {
+        this.groups = resp.group
+      }, (err) => {
+        console.log(err)
+      })
   }
 
 }

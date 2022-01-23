@@ -1,0 +1,7 @@
+.bio{
+    right: -100vw;
+    transition: right .7s ease;
+}
+.bio.show{
+    right: 0;
+}

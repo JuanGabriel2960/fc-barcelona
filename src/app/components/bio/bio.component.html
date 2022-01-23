@@ -1,0 +1,9 @@
+<div>
+    <div class="bg-white fixed top-0 z-10 h-screen w-full overflow-hidden overflow-y-scroll p-11 bio" [class.show]="show">
+        <div class="flex justify-between items-center">
+            <h2 class="text-6xl font-bold">{{name}}</h2>
+            <p (click)="show=false">x</p>
+        </div>
+        <p class="text-2xl mt-10 whitespace-pre-wrap text-justify">{{data_bio}}</p>
+    </div>
+</div>

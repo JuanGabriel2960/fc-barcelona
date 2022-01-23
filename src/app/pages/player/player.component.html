@@ -1,5 +1,6 @@
 <div *ngIf="player">
     <app-header></app-header>
+    <app-bio [show]="show" name="{{player.name}} {{player.lastname}}" [data_bio]="player.data_bio"></app-bio>
     <div class="py-20 px-16 bg-light-gray">
         <div class="flex flex-col justify-between items-center">
             <div class="flex flex-col items-center">
@@ -71,7 +72,7 @@
             <div class="flex flex-col gap-4 items-baseline">
                 <h2 class="text-3xl text-justify font-bold">{{player.title_bio}}</h2>
                 <p class="text-xl text-justify whitespace-pre-wrap">{{player.data_bio | preview}}</p>
-                <img src="/assets/more.png" alt="more" />
+                <img src="/assets/more.png" (click)="show=true" alt="more" />
             </div>
         </div>
     </div>

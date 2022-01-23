@@ -10,6 +10,7 @@ import { Player } from '../../interfaces/main.interface';
 })
 export class PlayerComponent implements OnInit {
   player!: Player;
+  show: boolean = false;
 
   constructor(private CMS: CMSService, private activatedRoute: ActivatedRoute) { }
 

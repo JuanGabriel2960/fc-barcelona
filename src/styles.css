@@ -49,6 +49,22 @@ button{
 .hidden{
     overflow: hidden;
 }
+.overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+    z-index: 99;
+}
+.overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
 /* Responsive */
 @media only screen and (min-width: 680px) {
     

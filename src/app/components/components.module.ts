@@ -10,6 +10,7 @@ import { GamesComponent } from './games/games.component';
 import { HighlightsComponent } from './highlights/highlights.component';
 import { StatsComponent } from './stats/stats.component';
 import { BioComponent } from './bio/bio.component';
+import { LoaderComponent } from './loader/loader.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { BioComponent } from './bio/bio.component';
     GamesComponent,
     HighlightsComponent,
     StatsComponent,
-    BioComponent
+    BioComponent,
+    LoaderComponent
   ],
   imports: [
     CommonModule,
@@ -31,7 +33,8 @@ import { BioComponent } from './bio/bio.component';
     GamesComponent,
     HighlightsComponent,
     StatsComponent,
-    BioComponent
+    BioComponent,
+    LoaderComponent
   ]
 })
 export class ComponentsModule { }

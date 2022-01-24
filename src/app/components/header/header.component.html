@@ -1,9 +1,9 @@
 <div class="bg-white flex justify-between items-center p-5">
-    <img src="/assets/logo.png" class="w-12" alt="logo">
+    <img src="/assets/logo.png" routerLink="/main" class="w-12" alt="logo">
     <div class="flex justify-center text-2xl gap-4">
-        <a>Facebook</a>
-        <a>Twitter</a>
-        <a>Instagram</a>
+        <a [href]="facebook" target="_blank">Facebook</a>
+        <a [href]="twitter" target="_blank">Twitter</a>
+        <a [href]="instagram" target="_blank">Instagram</a>
     </div>
     <img src="/assets/darkmode.png" class="w-12" alt="logo">
 </div>

@@ -62,19 +62,8 @@ button{
     z-index: 99;
 }
 .overlay.active{
-    opacity: 1!important;
-    pointer-events: all!important;
-}
-.modal{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: 200ms ease-in-out;
-    max-width: 80%;
-}
-.modal.active{
-    transform: translate(-50%, -50%) scale(1)!important;
+    opacity: 1;
+    pointer-events: all;
 }
 /* Responsive */
 @media only screen and (min-width: 680px) {

@@ -20,6 +20,17 @@
     stroke-dasharray: 242.6;
     animation: fill-animation 1s cubic-bezier(1,1,1,1) 0s infinite;
   }
+  .modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    max-width: 80%;
+}
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
   
   @keyframes fill-animation{
     0%{

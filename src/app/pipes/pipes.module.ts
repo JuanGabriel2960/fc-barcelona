@@ -5,19 +5,22 @@ import { CommonModule } from '@angular/common';
 // Pipes
 import { SafePipe } from './safe/safe.pipe';
 import { PreviewPipe } from './preview/preview.pipe';
+import { AgePipe } from './age/age.pipe';
 
 
 @NgModule({
   declarations: [
     SafePipe,
-    PreviewPipe
+    PreviewPipe,
+    AgePipe
   ],
   imports: [
     CommonModule
   ],
   exports: [
     SafePipe,
-    PreviewPipe
+    PreviewPipe,
+    AgePipe
   ]
 })
 export class PipesModule { }

@@ -6,6 +6,6 @@
             <a [href]="twitter" target="_blank">Twitter</a>
             <a [href]="instagram" target="_blank">Instagram</a>
         </div>
-        <img src="/assets/darkmode.png" (click)="toggleDarkMode()" class="w-12 cursor-pointer lg:w-16" alt="logo">
+        <img src="/assets/darkmode.png" (click)="toggleDarkMode()" [class.rotate]="darkmode" class="w-12 cursor-pointer lg:w-16" style="transition: 0.7s transform ease-in-out;" alt="logo">
     </div>
 </div>

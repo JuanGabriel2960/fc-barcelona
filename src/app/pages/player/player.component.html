@@ -1,7 +1,7 @@
 <div *ngIf="player" [class.dark]="darkmode">
     <app-header [facebook]="player.facebook" [twitter]="player.twitter" [instagram]="player.instagram"></app-header>
     <app-bio name="{{player.name}} {{player.lastname}}" [data_bio]="player.data_bio"></app-bio>
-    <img [src]="player.profile.url" class="hidden lg:block absolute m-auto left-0 right-0 text-center z-10" style="width: 543px;" alt="bio" />
+    <img [src]="player.profile.url" class="hidden lg:block absolute m-auto left-0 right-0 text-center z-10" style="width: 543px; animation: entry 1.3s ease;" alt="bio" />
     <div class="py-20 px-16 bg-light-gray dark:bg-medium-dark">
         <div class="flex flex-col justify-between items-center container mx-auto lg:flex-row">
             <div class="flex flex-col items-center lg:items-start dark:text-white">

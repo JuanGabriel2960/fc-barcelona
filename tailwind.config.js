@@ -18,6 +18,9 @@ module.exports = {
           'text-gray': '#bcc5cf',
           'light-blue': '#20428c',
           'bold-blue': '#06172a',
+          'bold-dark': '#181a1b',
+          'medium-dark': '#242729',
+          'light-dark': '#2c3032',
         },
         spacing: {
           '128': '38rem',

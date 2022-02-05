@@ -5,6 +5,7 @@ import { Player } from '../../interfaces/main.interface';
 import { Store } from '@ngrx/store';
 import { AppState } from '../../app.reducer';
 import * as ui from '../../components/ui.actions';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-player',
@@ -13,13 +14,20 @@ import * as ui from '../../components/ui.actions';
 })
 export class PlayerComponent implements OnInit, OnDestroy {
   player!: Player;
+  darkmode!: boolean;
   _id: string | null;
+  _subscription!: Subscription;
 
   constructor(private CMS: CMSService, private activatedRoute: ActivatedRoute, private store: Store<AppState>) {
     this._id = activatedRoute.snapshot.paramMap.get('_id')
   }
 
   ngOnInit(): void {
+    this._subscription = this.store.select('ui')
+      .subscribe(ui => {
+        this.darkmode = ui.darkmode
+      })
+
     this.CMS.getPlayer(this._id)
       .subscribe(resp => {
         this.player = resp
@@ -32,7 +40,7 @@ export class PlayerComponent implements OnInit, OnDestroy {
     this.store.dispatch(ui.closeModal())
   }
 
-  openModal(){
+  openModal() {
     this.store.dispatch(ui.openModal())
   }
 

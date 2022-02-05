@@ -13,3 +13,10 @@
 .modal.active{
     right: 0;
 }
+.modal::-webkit-scrollbar{
+    width: 7px;
+}
+.modal::-webkit-scrollbar-thumb{
+    background-color: #d7d9df;
+    border-radius: 5px;
+}

@@ -1,23 +1,23 @@
-<div class="cursor-pointer w-96 h-96 bg-white p-8 flex flex-col justify-end overflow-hidden duration-1000 ease-linear text-center card"
+<div class="cursor-pointer w-96 h-96 lg:w-128 lg:h-128 bg-white p-8 flex flex-col justify-end overflow-hidden duration-1000 ease-linear text-center card"
     style="background:linear-gradient(transparent,rgba(0,0,0,.8)),url('{{player.card.url}}')">
     <div class="mb-4 text-white">
-        <h3 class="font-bold text-3xl">{{player.number}} <span class="font-normal">{{player.name}}</span>
+        <h3 class="font-bold text-3xl lg:text-4xl">{{player.number}} <span class="font-normal">{{player.name}}</span>
             {{player.lastname}}</h3>
-        <h5 class="font-bold text-xl">{{player.position}}</h5>
+        <h5 class="font-bold text-xl lg:text-2xl">{{player.position}}</h5>
     </div>
     <div class="border-t border-gray-400 flex justify-evenly h-0 opacity-0 pt-4 info-bottom text-white"
         style="transition:.8s ease-in-out;">
         <div>
             <h5 class="text-lg">{{player.card_title_1}}</h5>
-            <h3 class="text-3xl">{{player.card_data_1}}</h3>
+            <h3 class="text-3xl lg:text-5xl lg:font-bold">{{player.card_data_1}}</h3>
         </div>
         <div>
             <h5 class="text-lg">{{player.card_title_2}}</h5>
-            <h3 class="text-3xl">{{player.card_data_2}}</h3>
+            <h3 class="text-3xl lg:text-5xl lg:font-bold">{{player.card_data_2}}</h3>
         </div>
         <div>
             <h5 class="text-lg">{{player.card_title_3}}</h5>
-            <h3 class="text-3xl">{{player.card_data_3}}</h3>
+            <h3 class="text-3xl lg:text-5xl lg:font-bold">{{player.card_data_3}}</h3>
         </div>
     </div>
 </div>

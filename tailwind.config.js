@@ -18,6 +18,10 @@ module.exports = {
           'text-gray': '#bcc5cf',
           'light-blue': '#20428c',
           'bold-blue': '#06172a',
+        },
+        spacing: {
+          '128': '38rem',
+          '160': '48rem',
         }
       },
     },

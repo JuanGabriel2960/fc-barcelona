@@ -18,7 +18,6 @@ export class LoaderComponent implements OnInit, OnDestroy {
     this._subscription = this.store.select('ui')
       .subscribe(ui => {
         this.loading = ui.loading
-        console.log('sus')
       })
   }
 

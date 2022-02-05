@@ -1,10 +1,10 @@
-<div *ngIf="player">
+<div *ngIf="player" [class.dark]="darkmode">
     <app-header [facebook]="player.facebook" [twitter]="player.twitter" [instagram]="player.instagram"></app-header>
     <app-bio name="{{player.name}} {{player.lastname}}" [data_bio]="player.data_bio"></app-bio>
     <img [src]="player.profile.url" class="hidden lg:block absolute m-auto left-0 right-0 text-center z-10" style="width: 543px;" alt="bio" />
-    <div class="py-20 px-16 bg-light-gray">
+    <div class="py-20 px-16 bg-light-gray dark:bg-medium-dark">
         <div class="flex flex-col justify-between items-center container mx-auto lg:flex-row">
-            <div class="flex flex-col items-center lg:items-start">
+            <div class="flex flex-col items-center lg:items-start dark:text-white">
                 <h1 class="text-6xl font-bold text-center lg:text-7xl lg:max-w-0">{{player.name}} {{player.lastname}}</h1>
                 <div class="my-6 flex lg:my-12">
                     <img [src]="player.flag.url" class="w-12 mr-5" alt="flag" />
@@ -27,8 +27,8 @@
             </div>
         </div>
     </div>
-    <div class="py-20 px-16 bg-bold-gray">
-        <div class="flex flex-col justify-between container mx-auto lg:flex-row">
+    <div class="py-20 px-16 bg-bold-gray dark:bg-light-dark">
+        <div class="flex flex-col justify-between container mx-auto lg:flex-row dark:text-white">
             <div>
                 <div class="flex justify-between">
                     <h4 class="mr-8 font-bold">BORN</h4>
@@ -60,15 +60,15 @@
             </div>
         </div>
     </div>
-    <div class="py-20 px-16 bg-light-gray">
+    <div class="py-20 px-16 bg-light-gray dark:bg-medium-dark">
         <div class="flex flex-col gap-8 justify-evenly items-center container mx-auto md:flex-row">
             <app-stats [title]="player.stat_title_1" [data]="player.stat_data_1" color="bg-light-blue"></app-stats>
             <app-stats [title]="player.stat_title_2" [data]="player.stat_data_2" color="bg-bold-blue"></app-stats>
             <app-stats [title]="player.stat_title_3" [data]="player.stat_data_3" color="bg-light-blue"></app-stats>
         </div>
     </div>
-    <div class="py-20 px-16 bg-bold-gray">
-        <div class="flex flex-col gap-5 justify-between items-center container mx-auto md:gap-6 lg:flex-row">
+    <div class="py-20 px-16 bg-bold-gray dark:bg-light-dark">
+        <div class="flex flex-col gap-5 justify-between items-center container mx-auto md:gap-6 lg:flex-row dark:text-white">
             <img [src]="player.bio.url" class="w-full lg:w-1/3" alt="bio" />
             <div class="flex flex-col gap-4 items-baseline md:gap-5 lg:w-3/5">
                 <h2 class="text-3xl text-justify font-bold md:text-4xl lg:text-5xl">{{player.title_bio}}</h2>

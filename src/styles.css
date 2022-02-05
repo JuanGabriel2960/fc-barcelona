@@ -38,11 +38,6 @@ button{
     --black: #172333;
 }
 /* Tools */
-.container{
-    padding: 0 2rem;
-    max-width: 1140px;
-    margin: 0 auto;
-}
 .center{
     text-align: center;
 }

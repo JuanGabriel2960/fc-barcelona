@@ -1,9 +1,9 @@
-<div class="overlay" [class.active]="show">
-    <div class="bg-white p-11 modal" [class.active]="show">
+<div class="overlay" [class.active]="show" (click)="closeModal()">
+    <div class="bg-white p-11 modal md:p-12" [class.active]="show" (click)="$event.stopPropagation()">
         <div class="flex justify-between items-center">
             <h2 class="text-6xl font-bold">{{name}}</h2>
-            <p class="text-4xl font-bold" (click)="closeModal()">&times;</p>
+            <p class="text-4xl font-bold cursor-pointer md:text-5xl" (click)="closeModal()">&times;</p>
         </div>
-        <p class="text-2xl mt-10 whitespace-pre-wrap text-justify">{{data_bio}}</p>
+        <p class="text-2xl mt-10 whitespace-pre-wrap text-justify md:text-3xl md:mt-11">{{data_bio}}</p>
     </div>
 </div>
